@@ -1,0 +1,18 @@
+test:
+  description: test my chaincode
+  name: basic-contract-benchmark
+  rounds:
+    - label: writeAsset
+      txNumber: 2000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1000
+      workload:
+        arguments:
+          assets: 5000
+          contractId: basic
+        module: workload/writeAsset.js
+  workers:
+    number: 10
+    type: local
