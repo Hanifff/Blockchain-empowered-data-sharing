@@ -4,10 +4,11 @@ You can also use our benchmarking module to benchamrk our chaincode.<br>
 In the benchmarking set we use different data set to store on the chain, and evaluate the performance based on that.
 The size of data set varies as follow:<br>
 
-- 32 bytes
-- 100 bytes
-- 500 bytes
-- 1000 bytes
+- 1024 bytes
+- 2 KB
+- 4 KB
+- 6 KB
+- 8 KB
 
 ---
 
